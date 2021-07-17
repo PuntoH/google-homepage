@@ -63,8 +63,14 @@ main input {
     margin-top: 25px;
     width: 45%;
     height: 40px;
+    text-indent: 35px;
     border-radius: 30px;
-    border: solid 1px #dfe1e5
+    border: solid 1px #dfe1e5;
+    outline: none;
+    background-image: url(google-search-icon.png), url(google-microphone-icon.png);
+    background-repeat: no-repeat;
+    background-position: 2% center, 98% center;
+    
 }
 
 main div button {
@@ -128,6 +134,8 @@ footer ul li a {
     text-decoration: none;
     color: #74787d
 }
+
+/* Added media queries so the footer's content wouldn't overflow */
 
 @media(max-width: 670px) {
 
