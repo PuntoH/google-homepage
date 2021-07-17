@@ -6,7 +6,7 @@
 
 body {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     display: inline-block;
     justify-content: center;
@@ -96,5 +96,62 @@ main p a:hover {
 footer {
     height: 10%;
     width: 100%;
-    background-color: #f2f2f2
+    max-width: 100%;
+    background-color: #f2f2f2;
+    border-top: solid 1px #dadce0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-ul-1 {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.footer-ul-2 {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+footer ul li {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #74787d
+}
+
+@media(max-width: 670px) {
+
+main {
+    height: 75%;
+}
+
+footer {
+        display: block;
+        height: 15%;
+    }
+
+.footer-ul-1 {
+        display: flex;
+        justify-content: center;
+}
+
+.footer-ul-2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+}
+
+footer ul li {
+    margin-top: 15px;
+}
 }
